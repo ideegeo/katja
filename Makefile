@@ -1,8 +1,8 @@
 PROJECT = katja
-PROJECT_VERSION = 0.9.2
+PROJECT_VERSION = 0.9.3
 
 DEPS = protobuffs
-dep_protobuffs = git https://github.com/basho/erlang_protobuffs 0.8.2
+dep_protobuffs = git https://github.com/basho/erlang_protobuffs 0.9.0
 
 TEST_DEPS = nifoc_ct_helper
 dep_nifoc_ct_helper = git https://github.com/nifoc/nifoc_ct_helper master
