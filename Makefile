@@ -1,5 +1,5 @@
 PROJECT = katja
-PROJECT_VERSION = 0.9.5
+PROJECT_VERSION = 0.9.6
 
 DEPS = protobuffs
 dep_protobuffs = git https://github.com/basho/erlang_protobuffs 0.9.0
@@ -67,6 +67,9 @@ ebin/$(PROJECT).app:: $(shell find src -type f -name \*.proto 2>/dev/null)
 endif
 
 include erlang.mk
+
+# avoid missing beam file during katja.app generation
+BEAM_FILES += katja_pb
 
 clean:: clean-proto
 
