@@ -12,3 +12,5 @@ erl_crash.dump
 *.trace
 
 include/katja_pb.hrl
+/*.d
+.erlang.mk/
